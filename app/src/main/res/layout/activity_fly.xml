@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bigwindow"
+    android:fitsSystemWindows="true"
+    tools:context="cn.shilight.gfly.FlyActivity">
+
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/fly_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 飞行时长：00：10：59"
+
+            android:textColor="@color/Text_fly_state_bar_text"
+            android:textSize="@dimen/fly_state_bar_text_size" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/satellite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:textColor="@color/Text_fly_state_bar_text"
+                android:textSize="@dimen/fly_state_bar_text_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123m"
+                android:textColor="@color/Text_fly_state_bar_text"
+                android:textSize="@dimen/fly_state_bar_text_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pwoer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11.6v"
+                android:textColor="@color/Text_fly_state_bar_text"
+                android:textSize="@dimen/fly_state_bar_text_size" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/driect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <com.jaygoo.widget.VerticalRangeSeekBar
+        android:id="@+id/verticalRangeSeekBar"
+        android:layout_width="80dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rsb_gravity="center"
+        app:rsb_indicator_drawable="@drawable/seekbutton"
+        app:rsb_max="30"
+        app:rsb_min="-30"
+        app:rsb_mode="single"
+        app:rsb_progress_color="#00FFFFFF"
+        app:rsb_progress_default_color="@color/seekbar_color"
+        app:rsb_progress_height="30dp"
+        app:rsb_progress_radius="10dp"
+        app:rsb_step_color="@color/seekbar_color"
+        app:rsb_thumb_drawable="@drawable/seekbutton"
+        app:rsb_thumb_height="70dp"
+        app:rsb_thumb_width="25dp"
+        app:rsb_tick_mark_mode="other"
+        app:rsb_tick_mark_text_array="@array/seek_mark"
+        app:rsb_tick_mark_text_color="@color/white"
+        app:rsb_tick_mark_text_size="12sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/smallwindows"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.amap.api.maps2d.MapView
+
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingClass" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

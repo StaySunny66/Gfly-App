@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_text_size">14sp</dimen>
+    <dimen name="fly_state_bar_text_size">20sp</dimen>
+    <dimen name="menu_text_padding">2dp</dimen>
+    <dimen name="menu_tittle_size">19dp</dimen>
+
+
+
+
+</resources>

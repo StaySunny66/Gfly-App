@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background_gary">#FFFFFF</color>
+    <color name="background_gary_back">#FF515a5a</color>
+    <color name="background_ba">#33495e</color>
+
+    <color name="Text_G">#FFBEB9B9</color>
+    <color name="Text_fly">#FFB19D9D</color>
+    <color name="Text_Menu">#FFFFFF</color>
+
+
+    <color name="fly_bg">#80515A5A</color>
+    <color name="Text_fly_state_bar_text">#DDDBDB</color>
+    <color name="fly_icon_color">#FF1296db</color>
+
+    <color name="seekbar_color">#80FFFFFF</color>
+    <color name="seekbar_button_color">#272727</color>
+
+
+</resources>

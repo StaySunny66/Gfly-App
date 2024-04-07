@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gary"
+    android:layout_height="match_parent"
+    tools:context="cn.shilight.gfly.MainActivityMenu">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        android:layout_weight="3"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <include layout="@layout/plane_state" />
+            <include layout="@layout/weater_state" />
+            <include layout="@layout/setting" />
+            <include layout="@layout/plane_state" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        >
+
+
+        <Button
+            android:id="@+id/flybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始飞行" />
+    </LinearLayout>
+
+</LinearLayout>
